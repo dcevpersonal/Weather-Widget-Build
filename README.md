@@ -1,25 +1,5 @@
 # Weather-Widget
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run create
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
 ### Stack
 ```
 Axios: 0.21.1,
@@ -48,6 +28,3 @@ Please Remove '<script src="https://unpkg.com/vue"></script>' From The Final Bui
 Danil Lazarev For Plumsail - 2021
 ```
 
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
