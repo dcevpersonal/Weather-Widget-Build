@@ -11098,12 +11098,12 @@ var Weather_List_Sectionvue_type_template_id_5b676e0a_scoped_true_staticRenderFn
 
 // CONCATENATED MODULE: ./src/components/Advanced-Components/Weather-List-Section.vue?vue&type=template&id=5b676e0a&scoped=true&
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3343753a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Advanced-Components/Weather-Cell-Section.vue?vue&type=template&id=4bedbcb7&scoped=true&
-var Weather_Cell_Sectionvue_type_template_id_4bedbcb7_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"Weather-Cell-Section"},[_c('MenuSection',{attrs:{"text":(_vm.city + "," + _vm.country),"type":"Settings","settings":_vm.settings}}),_c('ScreenSection',{attrs:{"main":_vm.main,"temp":_vm.temp}}),_c('TextSection',{attrs:{"text":("Feels liks " + (Math.round(_vm.feelsLike)) + "°C. " + _vm.main + ". " + _vm.description),"weight":"300"}}),_c('InformationSection',{attrs:{"deg":_vm.deg,"wind":_vm.wind,"feelsLike":_vm.feelsLike,"pressure":_vm.pressure,"temp":_vm.temp,"humidity":_vm.humidity,"visibility":_vm.visibility}})],1)}
-var Weather_Cell_Sectionvue_type_template_id_4bedbcb7_scoped_true_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3343753a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Advanced-Components/Weather-Cell-Section.vue?vue&type=template&id=59911248&scoped=true&
+var Weather_Cell_Sectionvue_type_template_id_59911248_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"Weather-Cell-Section"},[_c('MenuSection',{attrs:{"text":(_vm.city + "," + _vm.country),"type":"Settings","settings":_vm.settings}}),_c('ScreenSection',{attrs:{"main":_vm.main,"temp":_vm.temp}}),_c('TextSection',{attrs:{"text":("Feels like " + (Math.round(_vm.feelsLike)) + "°C. " + _vm.description + "."),"weight":"300"}}),_c('InformationSection',{attrs:{"deg":_vm.deg,"wind":_vm.wind,"feelsLike":_vm.feelsLike,"pressure":_vm.pressure,"temp":_vm.temp,"humidity":_vm.humidity,"visibility":_vm.visibility}})],1)}
+var Weather_Cell_Sectionvue_type_template_id_59911248_scoped_true_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/Advanced-Components/Weather-Cell-Section.vue?vue&type=template&id=4bedbcb7&scoped=true&
+// CONCATENATED MODULE: ./src/components/Advanced-Components/Weather-Cell-Section.vue?vue&type=template&id=59911248&scoped=true&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3343753a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Advanced-Components/Menu-Section.vue?vue&type=template&id=8eef103a&scoped=true&
 var Menu_Sectionvue_type_template_id_8eef103a_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"Menu-Section"},[_c('TextSection',{attrs:{"text":_vm.text}}),(_vm.settings)?_c('IconSection',{attrs:{"type":_vm.type,"embedFunction":_vm.setSection}}):_vm._e()],1)}
@@ -11283,7 +11283,7 @@ vue_runtime_esm["a" /* default */].use(vue_axios_es5_default.a, axios_default.a)
               id: response.data.id.toString(),
               name: response.data.name,
               country: response.data.sys.country,
-              description: response.data.weather[0].description,
+              description: response.data.weather[0].description.charAt(0).toUpperCase() + response.data.weather[0].description.slice(1),
               main: response.data.weather[0].main,
               wind: response.data.wind.speed.toString(),
               feelsLike: response.data.main.feels_like.toString(),
@@ -11328,7 +11328,7 @@ vue_runtime_esm["a" /* default */].use(vue_axios_es5_default.a, axios_default.a)
           id: response.data.id.toString(),
           name: response.data.name,
           country: response.data.sys.country,
-          description: response.data.weather[0].description,
+          description: response.data.weather[0].description.charAt(0).toUpperCase() + response.data.weather[0].description.slice(1),
           main: response.data.weather[0].main,
           wind: response.data.wind.speed.toString(),
           feelsLike: response.data.main.feels_like.toString(),
@@ -11372,7 +11372,7 @@ vue_runtime_esm["a" /* default */].use(vue_axios_es5_default.a, axios_default.a)
             id: city.id.toString(),
             name: city.name,
             country: city.sys.country,
-            description: city.weather[0].description,
+            description: city.weather[0].description.charAt(0).toUpperCase() + city.weather[0].description.slice(1),
             main: city.weather[0].main,
             wind: city.wind.speed.toString(),
             feelsLike: city.main.feels_like.toString(),
@@ -11768,7 +11768,7 @@ var Information_Section_component = normalizeComponent(
 
 function Weather_Cell_Section_injectStyles (context) {
   
-  var style0 = __webpack_require__("5fc1")
+  var style0 = __webpack_require__("dc1b")
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -11777,11 +11777,11 @@ if (style0.__inject__) style0.__inject__(context)
 
 var Weather_Cell_Section_component = normalizeComponent(
   Advanced_Components_Weather_Cell_Sectionvue_type_script_lang_ts_,
-  Weather_Cell_Sectionvue_type_template_id_4bedbcb7_scoped_true_render,
-  Weather_Cell_Sectionvue_type_template_id_4bedbcb7_scoped_true_staticRenderFns,
+  Weather_Cell_Sectionvue_type_template_id_59911248_scoped_true_render,
+  Weather_Cell_Sectionvue_type_template_id_59911248_scoped_true_staticRenderFns,
   false,
   Weather_Cell_Section_injectStyles,
-  "4bedbcb7",
+  "59911248",
   null
   ,true
 )
@@ -12270,18 +12270,6 @@ module.exports = function isAxiosError(payload) {
 
 /***/ }),
 
-/***/ "5fc1":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Weather_Cell_Section_vue_vue_type_style_index_0_id_4bedbcb7_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("bff9");
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Weather_Cell_Section_vue_vue_type_style_index_0_id_4bedbcb7_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Weather_Cell_Section_vue_vue_type_style_index_0_id_4bedbcb7_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Weather_Cell_Section_vue_vue_type_style_index_0_id_4bedbcb7_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Weather_Cell_Section_vue_vue_type_style_index_0_id_4bedbcb7_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-
-
-/***/ }),
-
 /***/ "619a":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12294,6 +12282,23 @@ exports.push([module.i, "*,:after,:before{box-sizing:border-box;margin:0;padding
 // Exports
 module.exports = exports;
 
+
+/***/ }),
+
+/***/ "6238":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("dfa1");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add CSS to Shadow Root
+var add = __webpack_require__("35d6").default
+module.exports.__inject__ = function (shadowRoot) {
+  add("fe5557e6", content, shadowRoot)
+};
 
 /***/ }),
 
@@ -16909,20 +16914,6 @@ Sortable.mount(Remove, Revert);
 
 /***/ }),
 
-/***/ "ac6b":
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__("24fb");
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.i, ".Weather-Cell-Section[data-v-4bedbcb7]{display:flex;text-align:center;flex-direction:column;align-items:center;justify-content:center}#Text-Section[data-v-4bedbcb7]{font-size:.5rem;margin:28px}", ""]);
-// Exports
-module.exports = exports;
-
-
-/***/ }),
-
 /***/ "ae93":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19702,23 +19693,6 @@ module.exports = __webpack_require__("cee4");
 
 /***/ }),
 
-/***/ "bff9":
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__("ac6b");
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add CSS to Shadow Root
-var add = __webpack_require__("35d6").default
-module.exports.__inject__ = function (shadowRoot) {
-  add("75b357ea", content, shadowRoot)
-};
-
-/***/ }),
-
 /***/ "c04e":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20544,6 +20518,18 @@ module.exports =
 
 /***/ }),
 
+/***/ "dc1b":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Weather_Cell_Section_vue_vue_type_style_index_0_id_59911248_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("6238");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Weather_Cell_Section_vue_vue_type_style_index_0_id_59911248_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Weather_Cell_Section_vue_vue_type_style_index_0_id_59911248_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Weather_Cell_Section_vue_vue_type_style_index_0_id_59911248_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Weather_Cell_Section_vue_vue_type_style_index_0_id_59911248_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
 /***/ "ddb0":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20918,6 +20904,20 @@ var substr = 'ab'.substr(-1) === 'b'
 ;
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__("4362")))
+
+/***/ }),
+
+/***/ "dfa1":
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__("24fb");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".Weather-Cell-Section[data-v-59911248]{display:flex;text-align:center;flex-direction:column;align-items:center;justify-content:center}#Text-Section[data-v-59911248]{font-size:.5rem;margin:28px}", ""]);
+// Exports
+module.exports = exports;
+
 
 /***/ }),
 
