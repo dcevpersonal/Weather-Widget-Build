@@ -23,17 +23,17 @@
 
 ##  🛡️ Build with   
 
-Axios: 0.21.1,
-Vue: 2.6.11,
-Vue-Axios: 3.2.2,
-VueDraggable: 2.24.3,
-Vuex: 3.4.0
-Babel: 4.5.0
-TypeScript: 3.9.3
-Eslint: 6.7.2
-Prettier: 1.19.1
-Node-SASS: 4.12.0
-Webpack
+    Axios: 0.21.1,
+    Vue: 2.6.11,
+    Vue-Axios: 3.2.2,
+    VueDraggable: 2.24.3,
+    Vuex: 3.4.0
+    Babel: 4.5.0
+    TypeScript: 3.9.3
+    Eslint: 6.7.2
+    Prettier: 1.19.1
+    Node-SASS: 4.12.0
+    Webpack
 	
 ##  🦌 Authors
     Daniel Lane (Danil Lazarev) - 2021
