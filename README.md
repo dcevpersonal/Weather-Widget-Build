@@ -19,9 +19,8 @@
     npm run create
 
 ## 📘 Note
-###### To build the project you need to execute
-    Please Remove '<script src="https://unpkg.com/vue"></script>' From The Final Build.
-
+###### Please read before build
+    Please remove '<script src="https://unpkg.com/vue"></script>' from the final build.
 
 ##  🛡️ Build with   
 
