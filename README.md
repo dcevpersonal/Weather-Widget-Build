@@ -1,4 +1,4 @@
-# 🌌 Weather-Widget
+# 🌌 Weather-Widget-Build
 
 ##  ❄️ Getting Started
 ###### For initializing the project you need to use the following commands
