@@ -18,6 +18,11 @@
 ###### To build the project you need to execute
     npm run create
 
+## 📘 Note
+###### To build the project you need to execute
+    Please Remove '<script src="https://unpkg.com/vue"></script>' From The Final Build.
+
+
 ##  🛡️ Build with   
 
     Axios: 0.21.1
