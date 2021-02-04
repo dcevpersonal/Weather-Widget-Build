@@ -18,15 +18,12 @@
 ###### To build the project you need to execute
     npm run create
 
-## 🚀   Deployment
-###### Currently Front End deployed to Netlify
-
 ##  🛡️ Build with   
 
-    Axios: 0.21.1,
-    Vue: 2.6.11,
-    Vue-Axios: 3.2.2,
-    VueDraggable: 2.24.3,
+    Axios: 0.21.1
+    Vue: 2.6.11
+    Vue-Axios: 3.2.2
+    VueDraggable: 2.24.3
     Vuex: 3.4.0
     Babel: 4.5.0
     TypeScript: 3.9.3
